@@ -9,13 +9,14 @@ import numpy as np
 import pandas as pd
 
 
+
 def pregunta_01():
     """
     En este punto se realiza la lectura de conjuntos de datos.
     Complete el código presentado a continuación.
     """
     # Lea el archivo `gm_2008_region.csv` y asignelo al DataFrame `df`
-    df = pd.read_csv("gm_2008_region.csv", sep = ',', thousands= None, decimal = ".")
+    df = pd.read_csv('gm_2008_region.csv', sep = ',', thousands= None, decimal = ".")
 
     # Asigne la columna "life" a `y` y la columna "fertility" a `X`
     y = df['life'].values
@@ -49,7 +50,7 @@ def pregunta_02():
     """
 
     # Lea el archivo `gm_2008_region.csv` y asignelo al DataFrame `df`
-    df = ____
+    df =pd.read_csv('gm_2008_region')
 
     # Imprima las dimensiones del DataFrame
     print(____.____)
