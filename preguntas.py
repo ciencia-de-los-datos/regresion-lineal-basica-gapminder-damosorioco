@@ -145,7 +145,7 @@ def pregunta_04():
     )
 
     # Cree una instancia del modelo de regresión lineal
-    linearRegression =linearRegression(fit_intercept = False, normalize = False)
+    linearRegression = LinearRegression(fit_intercept = False, normalize = False)
 
     # Entrene el clasificador usando X_train y y_train
     linearRegression.fit(X_train, y_train)
