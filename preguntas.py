@@ -6,6 +6,7 @@ En este laboratio se construirá un modelo de regresión lineal univariado.
 
 """
 import csv
+from pickle import TRUE
 import numpy as np
 import pandas as pd
 from locale import normalize
@@ -145,7 +146,7 @@ def pregunta_04():
     )
 
     # Cree una instancia del modelo de regresión lineal
-    linearRegression = LinearRegression(fit_intercept = False, normalize = False)
+    linearRegression = LinearRegression(fit_intercept = True, normalize = False)
 
     # Entrene el clasificador usando X_train y y_train
     linearRegression.fit(X_train, y_train)
